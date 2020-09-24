@@ -48,11 +48,8 @@ $(document).ready(function() {
 
     var fileNames = new Array();
     $.ajax({
-        url: "https://meaningcloud.github.io/test-dashboard/reports", 
-       
+        url: "https://api.github.com/repos/MeaningCloud/test-dashboard/git/trees/master",
     }).done(function( data ) {
-        if ( console && console.log ) {
-            console.log( "Sample of data:", data);
-        }
+        console.log( "Sample of data:", data);
     });
 });
